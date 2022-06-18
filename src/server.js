@@ -63,7 +63,7 @@ io.on('connection', (socket) => {
 	});
 });
 
-const PORT = 8080;
+const PORT = process.env.PORT;
 server.listen(PORT, () => {
 	logger.info(`----------------------------------------------`);
 	logger.info(`Server started on http://localhost:8080 ✨`);
