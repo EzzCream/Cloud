@@ -24,7 +24,7 @@ if (cluster.isMaster) {
 	const server = app.listen(PORT, () => {
 		logger.info(`----------------------------------------------`);
 		logger.info(
-			`Server started on http://localhost:8080 ✨ - PID ${process.pid}`,
+			`Server ? started on http://localhost:8080 ✨ - PID ${process.pid}`,
 		);
 		logger.info(`----------------------------------------------`);
 	});
