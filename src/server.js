@@ -66,10 +66,10 @@ io.on('connection', (socket) => {
 	});
 });
 
-const PORT = yargs.argv.PORT || 8080;
+const PORT = 8080;
 server.listen(PORT, () => {
 	logger.info(`----------------------------------------------`);
-	logger.info(`Server started on http://localhost:${PORT} ✨`);
+	logger.info(`Server started on http://localhost:8080 ✨`);
 	logger.info(`----------------------------------------------`);
 });
 server.on('error', (err) => logger.error(err));
