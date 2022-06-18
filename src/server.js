@@ -7,10 +7,7 @@ import { producto1, prod } from './util/product.util.js';
 import UserRouter from './routers/pages.routers.js';
 import session from 'express-session';
 import passport from './util/passport.utils.js';
-import Yargs from 'yargs';
 import { logger } from './logs/loggers.logs.js';
-
-const yargs = Yargs(process.argv.slice(2));
 
 const app = express();
 const server = http.createServer(app);
